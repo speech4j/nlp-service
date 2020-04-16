@@ -3,11 +3,16 @@ language: java
 jdk:
   - openjdk11
 
+addons:
+  sonarcloud:
+    organization: "speech4j"
+
 before_install:
   - chmod +x gradlew
 
 script:
   - ./gradlew build --stacktrace
+  - ./gradlew sonarqube --stacktrace
 
 after_success:
   - docker build -t speech4j/nlp-service -f Dockerfile
@@ -17,5 +22,6 @@ after_success:
 cache:
   directories:
     - '$HOME/.m2/repository'
+    - '$HOME/.sonar/cache'
     - '$HOME/.gradle'
     - '.gradle'
