@@ -1,0 +1,21 @@
+language: java
+
+jdk:
+  - openjdk11
+
+before_install:
+  - chmod +x gradlew
+
+script:
+  - ./gradlew build --stacktrace
+
+after_success:
+  - docker build -t speech4j/nlp-service -f Dockerfile
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  - docker push speech4j/nkp-service
+
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+    - '$HOME/.gradle'
+    - '.gradle'
