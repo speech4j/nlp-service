@@ -7,7 +7,7 @@ addons:
   sonarcloud:
     organization: "speech4j"
     token:
-      secure: $SONAR_TOKEN
+      secure: ${SONAR_TOKEN}
 
 before_install:
   - chmod +x gradlew
