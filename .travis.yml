@@ -8,8 +8,6 @@ jdk:
 addons:
   sonarcloud:
     organization: "speech4j"
-    token:
-      secure: "jGWk7F3vi7TwZtDuMuFUvHzNQPDs1AGcwW4Fa9CvSnevbTKUmLqIHUAyRrUqLiUKl+rK49vZy8ijJe6VTldts5bnhb6kAWeHHxFZfMeB/NUTkCuThAftrXPk8sxlK2iwTw3U9QHWU90C1OMzEOCAy7lHrMOvjlsZcIKk1S4YUJ2UOrdkdnM5lOH2YZsc9ghP/sehijJzp41iDIFuy5df9IjfZKnM1hH7RXImY4BhNlWwpoBSGpV44r5zFhQLPSISOFDY3P0BY9FQhFarVOGZkxBhkSzhIddBilIxCnAkfsXfERMLDD+nsH6Tzt5469cWL+cHkEuBLBdShla2tTvh0z06LeTkSoVA7c/Pjdz8/yL8fNkDhf1Hri0visOUgNA4zxgG+RORDXR+Efw1npkeRxd+EReEw5hDYKubaNfUmcxSaLAfq8TF/XmNqERMw5KPiG2W+Ui4nhM4oxqgTZct5P/r49xelN1cfZtnLdSfsV0nXSmcVvyv9KOxbJvVY/65JCRsZXC1fAvRAzRVMYCPqd4+3M5fgnyhCU2ROmq4axvraPdQWGm+9t0iPhMq8XqZrXRkPIZm8El3baXsg5x/eA34N/3K3d977us0NR6K7T0ShnvTa44nftBi8b/J771C2JYl908pEi/Y3vla/50LJqyA9W6ZrUXdhYGD8A9rCMo="
 
 before_install:
   - chmod +x gradlew
